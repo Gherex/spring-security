@@ -2,12 +2,6 @@ package com.gherex.authwithjwt.dto;
 
 import lombok.Getter;
 
-public class AuthResponse {
+public record AuthResponse(@Getter String token) {
 
-    @Getter
-    private final String token;
-
-    public AuthResponse(String token) {
-        this.token = token;
-    }
 }
